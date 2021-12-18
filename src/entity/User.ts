@@ -17,6 +17,12 @@ export class User extends BaseEntity{
     })
     cardNumber: string;
 
+    @Column({
+        nullable: true
+    })
+    amount: number;
+
+
     @Column()
     month: string;
 
